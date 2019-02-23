@@ -1,0 +1,17 @@
+//modulus.cpp --use % operator to convert lbs to stone
+#include <iostream>
+int main(void)
+{
+	using namespace std;
+	const int Lbs_per_stn = 14;
+	int lbs;
+
+	cout << "Enter your weight in stones: ";
+	cin >> lbs;
+	int stone = lbs / Lbs_per_stn;
+	int pounds = lbs % Lbs_per_stn;
+	cout << lbs << " pounds are " << stone
+		 << " stones, " << pounds << " pounds.\n";
+
+	return 0;
+}
