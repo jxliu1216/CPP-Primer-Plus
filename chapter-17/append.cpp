@@ -21,7 +21,7 @@ int main()
     }
 
     // add new names
-    ofstream fout(file, ios::out | ios::app)
+    ofstream fout(file, ios::out | ios::app);
     if(!fout.is_open())
     {
         cerr << "Can not open " << file << " file for output!\n";
@@ -44,9 +44,9 @@ int main()
         cout << "Here are the new contents of the " << file << " file:\n";
         while(fin.get(ch));
             cout << ch;
-        fin.close()
+        fin.close();
     }
-    cout << "Done!\n"
+    cout << "Done!\n";
 
     return 0;
 }
