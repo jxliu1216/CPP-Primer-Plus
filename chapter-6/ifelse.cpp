@@ -21,9 +21,6 @@ int main()
 
     cout << "\nPlease excuse the slight confusion.\n";
 
-    ch = 'l';
-    cout << int(ch) << endl;
-
     return 0;
 
 }
