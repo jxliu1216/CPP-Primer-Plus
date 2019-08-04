@@ -14,13 +14,13 @@ int main()
     cin >> side;
     double volume = cube(side);
     cout << "A " << side << "-foot cube has a volume of ";
-    cout << "volume " << " cubic feet.\n";
+    cout << volume << " cubic feet.\n";
     cheers(cube(2));
     
     return 0;
 }
 
-void cheers(int n);
+void cheers(int n)
 {
     using namespace std;
     for(int i = 0; i < n; ++i)
