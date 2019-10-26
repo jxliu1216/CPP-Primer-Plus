@@ -1,4 +1,4 @@
-# no .out files
+# no trace files
 *.out
 *.txt
 *.exe
