@@ -183,3 +183,32 @@ cout << pxy.x << pxy.y << endl;
 cout << pxy->x << pxy->y << endl;
 ```
 
+### 5.指针与函数
+
+**函数的地址：**函数的地址是存储其机器语言代码的内存开始的地址。
+
+**获取函数的地址：**函数名就是该函数的地址
+
+##### （1）声明函数的指针
+
+​		需要指定函数的返回类型，以及特征标（参数列表），要像函数原型一样指出有关函数的信息。
+
+```c++
+double pam(int);	// function prototype
+double (*pf)(int);	// function pointer
+pf = pam;
+double * pf (int);	// function return a pointer
+```
+
+##### （2）使用指针调用函数
+
+​		若pf是指向函数的指针，使用(*pf)即可调用该函数
+
+```c++
+double pam(int);
+double (*pf)(int);
+pf = pam;
+double x = pam(4);		// call pam() using the function name
+double y = (*pf)(5);	// call pam() using the pointer pf
+```
+
