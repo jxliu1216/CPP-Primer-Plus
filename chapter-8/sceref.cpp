@@ -9,7 +9,7 @@ int main(void)
 
     cout << "rats = " << rats << ", rodents = " << rodents << endl;
     cout << "rats address = " << &rats
-         << "rodents address = " << &rodents << endl;
+         << " rodents address = " << &rodents << endl;
 
     int business = 50;
     rodents = business;
